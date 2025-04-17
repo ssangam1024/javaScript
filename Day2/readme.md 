@@ -71,6 +71,12 @@ HTML CSS review, console.log Exercises:
 4c. create a paragraph with the text "Hello, world!" inside.
 4d. continuing from Exercise 4c, cretae a paragraphbelow the previous paragraph and write something you did today.
 
-![Answers](javaScript/Day2/images/htmlcss4abcd.png)
+![Answers of 4a,4b,4c,4d](javaScript/Day2/images/htmlcss4abcd.png)
 
+4e. create 2 Buttons 'addto cart' and 'buy now'. use css to give them yellow and orange background colors.
+4f. add html structure to Exercise 4e.
+4g. continuing from 4f, change the title at the top of the tab to "Buttons".
+4h. continuing from 4g, add script element so that when the page loads, it displays the message 'welcome!' in the console. 
 
+![Answers of 4e,4f,4g,4h](javaScript/Day2/images/ans4efgh.png)
+![Answers of 4e,4f,4g,4h](javaScript/Day2/images/ansEFGH4.png)
