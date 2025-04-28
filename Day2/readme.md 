@@ -13,11 +13,11 @@ Css - CSS is like a set of instructions to style your HTML.
 
 CSS Syntax Rules:
 
-* CSS Selector: Selects which HTML elements you want to style (change how they look). Example: p, .class-name, #id-name
+* CSS Selector:Selects which HTML elements you want to style (change how they look).Example: p, .class-name, #id-name
 
-* CSS Style Rule: Tells the browser how to change the appearance of the selected element. In each style rule:
-*      The left side is called the CSS property – it tells what you want to change. 
-*       The right side is the CSS value – it tells how you want to change it. 
+* CSS Style Rule:Tells the browser how to change the appearance of the selected element.In each style rule:
+*      The left side is called the CSS property – it tells what you want to change.
+*       The right side is the CSS value – it tells how you want to change it.
 
 
 HTML Attributes – Syntax Rules:
@@ -32,16 +32,16 @@ HTML Attributes – Syntax Rules:
 
 Html Structure : 
 
-<!DOCTYPE html> → Tells the browser: “Use the latest version of HTML (HTML5).”
+<!DOCTYPE html>→ Tells the browser: “Use the latest version of HTML (HTML5).”
 
-<html>...</html> → Wraps the entire webpage. Everything goes inside this.
+<html>...</html>→ Wraps the entire webpage. Everything goes inside this.
 
-<head>...</head> → Contains info about the page, like:
+<head>...</head>→ Contains info about the page, like:
 * The page title (shown in the browser tab)
 * Links to CSS files
 * Meta tags (for SEO, responsive design, etc.)
 
-<body>...</body> → Contains everything that is visible on the screen, like:
+<body>...</body>→ Contains everything that is visible on the screen, like:
 * Text
 * Images
 * Buttons
