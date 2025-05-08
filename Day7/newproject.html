@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> </head>
+    <body>
+        <input placeholder= "Type something" onkeyup= "updateText()" id="textInput">
+        <p>
+         <span id= "output"> </span>
+        </p>
+
+       
+        <script>
+            function updateText() {
+      var input = document.getElementById("textInput").value;
+
+     
+      document.getElementById("output").textContent = input;
+    }
+
+        </script>
+    </body>
+</html>
