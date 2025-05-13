@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button 
+    class="js-button" 
+    onclick="updateButton(); document.querySelector('.js-button').innerHTML='Loading' "
+    > Start </button>    
+
+    <button 
+    class="js-cartButton"
+    onclick="displayMessage()"
+    > Add to cart </button>
+    <p class="js-message"> </p>
+    <script> 
+        function updateButton(){
+            const button = document.querySelector('.js-button');
+
+            setTimeout(function() {
+                button.innerHTML='Finished!'; 
+            }, 1000);
+    
+        }
+        function displayMessage(){
+          const message=document.querySelector('.js-message');message.innerHTML='Added'
+
+          setTimeout(function() {
+                message.innerHTML=' '; 
+            }, 2000);
+
+
+        }
+        
+    </script>
+  </body>
+</html>
+
