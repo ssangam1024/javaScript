@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arrays and Loops </title>
+    </head>
+    <body>
+        <script>
+            function removeEgg(foods) {
+                let eggsRemoved = 0;
+
+                return foods.filter((food) => {
+          
+                if (food !== 'egg') { 
+                    return true;
+                }
+
+                return false;
+            });
+        }
+            console.log(removeEgg(['egg','apple','egg','egg','ham']));
+    
+        </script>
+    </body>
+</html>
+
