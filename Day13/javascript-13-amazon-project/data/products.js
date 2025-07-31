@@ -19,7 +19,7 @@ const products = [
     image: "images/products/intermediate-composite-basketball.jpg",
     name: "Intermediate Size Basketball",
     rating: {
-      stars: 4,
+      stars: 5,
       count: 127
     },
     priceCents: 2095,
@@ -656,5 +656,25 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id:" id1" ,
+    image: "images/products/umbrella.jpg",
+    name: "Umberella ",
+    rating: {
+      stars: 4.5 ,
+      count:4157
+    },
+    priceCents: 1900
+  },
+  {
+    id:" id2" ,
+    image: "images/products/backpack.jpg",
+    name: "Backpack ",
+    rating: {
+      stars: 3.5,
+      count:1234
+    },
+    priceCents: 2400
   }
 ];
