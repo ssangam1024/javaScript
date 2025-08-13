@@ -658,7 +658,7 @@ export const products = [
     ]
   },
   {
-    id:" id1" ,
+    id: "id1" ,
     image: "images/products/umbrella.jpg",
     name: "Umberella ",
     rating: {
@@ -668,7 +668,7 @@ export const products = [
     priceCents: 1900
   },
   {
-    id:" id2" ,
+    id: "id2" ,
     image: "images/products/backpack.jpg",
     name: "Backpack ",
     rating: {
