@@ -1,4 +1,4 @@
-import{cart, removeFromCart} from '../data/cart.js';
+import{cart, removeFromCart, calculateCartQuantity} from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency} from './utils/money.js';
 
@@ -17,7 +17,8 @@ cart.forEach((cartItem)=> {
 
 
 
-    cartSummaryHTML +=  ` 
+    cartSummaryHTML +=  
+    ` 
     <div class="cart-item-container 
         js-cart-item-container-${matchingProduct.id}">
         <div class="delivery-date">
@@ -97,9 +98,27 @@ cart.forEach((cartItem)=> {
         `;
 })
 
+function updateCheckoutQuantity(){
+    const checkoutQuantity = calculateCartQuantity ();
+    
+    const quantityElement = document.querySelector('.js-checkout-quantity');
+
+    if (quantityElement) {
+       let itemText;
+         if(  checkoutQuantity === 1 ) {
+            itemText = 'item' ;
+         } else {
+            itemText = 'items';
+         }
+        quantityElement.innerHTML = `${checkoutQuantity} ${itemText}`;
+    }
+
+}
+
 
 document.querySelector('.js-order-summary')
-    .innerHTML = cartSummaryHTML;
+    .innerHTML = cartSummaryHTML; 
+    updateCheckoutQuantity();
 
 document.querySelectorAll('.js-delete-link')
     .forEach((link) => {
@@ -112,5 +131,7 @@ document.querySelectorAll('.js-delete-link')
                 `.js-cart-item-container-${productId}`
             );
             container.remove();
+
+            updateCheckoutQuantity();
         });
     });
